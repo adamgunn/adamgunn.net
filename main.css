@@ -137,10 +137,8 @@ header {
 }
 
 .navbar {
-    text-align: center;
-    text-align: -webkit-center;
-    text-align: -moz-center;
-    display: block;
+    display: flex;
+    justify-content: center;
 }
 
 .navbar, .icon_button_set {
@@ -155,6 +153,8 @@ header {
 .navbar_text {
     display: inline-block;
 }
+
+
 
 .navbar_text, .icon_button_text, .submit_button {
     font-family: franklin-gothic-condensed,sans-serif;
@@ -211,6 +211,10 @@ a#adamGunn:hover {
     box-shadow: 4px 4px var(--shadow-color);
     color: var(--button-text-color);
     cursor: pointer;
+}
+
+.navbar li:not(#select_game_text):not(#select_game_text) {
+    margin: 10px;
 }
 
 body :not(.contacts_container) :not(.portfolio-display-container) :not(header *) {

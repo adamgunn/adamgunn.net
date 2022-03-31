@@ -70,6 +70,22 @@ body {
     text-transform: lowercase;
 }
 
+#mobile_header {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 100vw;
+    box-sizing: border-box;
+    display: none;
+}
+
+#mobile_header_icon {
+    fill: var(--text-color);
+    width: 3rem;
+    height: 3rem;
+    margin: 1rem;
+}
+
 .dropdown_title {
     height: max-content;
 }
@@ -130,34 +146,6 @@ body {
 #about_link {
     text-decoration: none;
 }
-
-/* 
-.centerer {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
-    position: absolute;
-    top: 0;
-    width: 100vw;
-    z-index: -1;
-} */
-
-/* #home_page, #about_page {
-    height: calc(100vh - var(--header-height));
-    width: 100vw;
-    display: block;
-    margin: 0;
-    padding: 0;
-    align-items: center;
-    justify-content: center;
-    transform: translate(0, calc(0 - var(--header-height)));
-
-} */
-
-/* #about_page {
-    margin: 2rem;
-} */
 
 @keyframes spin {
     0% {
